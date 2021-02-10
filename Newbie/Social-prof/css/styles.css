@@ -1,0 +1,118 @@
+:root {
+    --very--dark--magenta: hsl(300, 43%, 22%);
+    --soft--pink: hsl(333, 80%, 67%);
+    --dark--grayish--magenta: hsl(303, 10%, 53%);
+    --light--grayish--magenta: hsl(300, 24%, 96%);
+    --white: hsl(0, 0%, 100%);
+}
+
+body {
+    padding: 0 20px;
+    background-color: var(--white);
+    font-family: 'Spartan', sans-serif;
+}
+
+h1, h2, p, blockquote {
+    margin: 0;
+}
+
+.header {
+    margin-top: 100px;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.header__title {
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--very--dark--magenta);
+    margin-bottom: 1.5rem;
+    line-height: 40px;
+}
+
+.header__subtitle {
+    line-height: 1.5rem;
+    color: var(--dark--grayish--magenta);
+}
+
+.rates {
+    display: grid;
+    row-gap: 15px;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.rated {
+    background-color: var(--light--grayish--magenta);
+    padding: 1rem 0;
+    border-radius: 10px;
+}
+
+.rated__stars {
+    margin-bottom: .5rem;
+}
+
+.rated__star {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background: url(../assets/img/icon-star.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: 2px;
+}
+
+.rated__title {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--very--dark--magenta);
+}
+
+.cards {
+    display: grid;
+    column-gap: 15px;
+    row-gap: 15px;
+}
+
+.card {
+    background-color: var(--very--dark--magenta);
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.card__header {
+    display: flex;
+    align-items: center;
+}
+
+.card__image {
+    border-radius: 50%;
+    width: 40px;
+}
+
+.card__presentation {
+    margin-left: 25px;
+}
+
+.card__title {
+    font-size: 14px;
+    color: var(--white);
+    font-weight: 500;
+}
+
+.card__subtitle {
+    color: var(--soft--pink);
+    font-size: 13px;
+    line-height: 1.5rem;
+}
+
+.card__description {
+    margin-top: 1.5rem;
+    font-size: 14px;
+    color: var(--white);
+    font-weight: 400;
+    line-height: 1.25rem;
+}

@@ -116,3 +116,60 @@ h1, h2, p, blockquote {
     font-weight: 400;
     line-height: 1.25rem;
 }
+
+@media screen and (min-width: 768px) {
+    body {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 60px;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .header {
+        max-width: 60%;
+        text-align: start;
+    }
+
+    .rated {
+        display: flex;
+        align-items: center;
+        width: 400px;
+        padding-right: 1.5rem;
+        position: relative;
+    }
+
+    .rated:nth-child(2){
+        left: 50px;
+    }
+
+    .rated:nth-child(3) {
+        left: 100px;
+    }
+
+    .rated__stars {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        margin-bottom: 0;
+    }
+
+    .cards {
+        grid-column: 1 / -1;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+    }
+
+    .card {
+        margin: 1rem;
+        position: relative;
+        max-width: 400px;
+    }
+
+    .card:nth-child(2) {
+        top: 20px;
+    }
+
+    .card:nth-child(3) {
+        top: 40px;
+    }
+}

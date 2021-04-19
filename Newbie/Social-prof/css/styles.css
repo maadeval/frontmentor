@@ -134,23 +134,16 @@ h1, h2, p, blockquote {
     .rated {
         display: flex;
         align-items: center;
-        width: 400px;
+        max-width: 400px;
         padding-right: 1.5rem;
         position: relative;
-    }
-
-    .rated:nth-child(2){
-        left: 50px;
-    }
-
-    .rated:nth-child(3) {
-        left: 100px;
     }
 
     .rated__stars {
         padding-left: 1.5rem;
         padding-right: 1.5rem;
         margin-bottom: 0;
+        min-width: max-content;
     }
 
     .cards {
@@ -171,5 +164,29 @@ h1, h2, p, blockquote {
 
     .card:nth-child(3) {
         top: 40px;
+    }
+}
+
+@media screen and (min-width: 998px) {
+    .rated {
+        display: flex;
+        align-items: center;
+        max-width: 400px;
+        padding-right: 1.5rem;
+        position: relative;
+    }
+
+    .rated:nth-child(1){
+        left: -50px;
+    }
+
+    .rated:nth-child(3) {
+        left: 50px;
+    }
+
+    .rated__stars {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        margin-bottom: 0;
     }
 }
